@@ -6,38 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Language Webstite</title>
 
-  <link href="stylesheet.css" rel=stylesheet>
+  
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+  <link href="stylesheet.css" rel=stylesheet>
 </head>
 <body>
-<h1>Communicate effectively</h1>
 
+<div class="title">
+  <div class="row">
+    <div class="col-sm-12 p-4">
+      <h1>Effektive Kommunikation</h1> <!--wieso übernimmt es das css center nicht?-->
+    </div>
+  </div>
+</div>
 
-<div class="moodpicture">
-    <div class="row">
-        <div class="col-sm-12">
-                <img src="moodpicture.jpg" alt="language mood picutre"> <!--class="img-fluid mx-auto d-block">-->
+<!-- Hier kommt das Formular-->
+<div class="logo_form">
+  <div class="row">
+    <div class="col-sm-4 p-5">
+      <img src="KOMUNO.png" alt="komuno logo" class="container full-sreen d-flex justifiy-content left"> <!--Logo Komuno-->
+    </div>
+    <div class="col-sm-8 pr-5 pt-4">
+        <p>Buchen Sie jetzt Ihren Kurs</p>
+        <!--<div class="mb-3">
+          <label for="anrede" class="anrede">Anrede</label>
+          <input type="text" class="das wissen wir nicht" id="anrede" Hier kommt das drop down menu oder Häkchen zum akreuzen-->
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Ihre E-Mail Adresse</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Bemerkungen</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
     </div>
 </div>
 
 
-<div class="container">
+<div class="moodpicture">
     <div class="row">
-      <div class="col-sm-4">
-        <h3>Column 1</h3>
-        <p>Lorem ipsum dolor..</p>
+        <div class="col-sm-12">
+                <img src="moodpicture.jpg" class="container full-screen d-flex justify-content center" alt="language mood picutre"> <!--class="img-fluid mx-auto d-block">--> <!--wieso ist das nicht mehr responsive und zentriert?-->
+        </div>
+    </div>
+</div>
+
+
+<div class="benefits">
+    <div class="row">
+      <div class="col-sm-4 p-5">
+        <h3>Seminar vor Ort oder Online</h3> <!--ICONS-->
+        <p>Wir finden, echte Kommunikation findet in Echtzeit statt, und bieten unsere Schulungen vor Ort im Volkshaus Zürich statt. Sie sind an diesem Ort nicht verfügbar? Unsere Schulungen gibt es auch auf Zoom mit einer Zoom-Betreuerin für Sie. Damit auch Sie auf Ihre Kosten kommen. </p>
       </div>
-      <div class="col-sm-4">
-        <h3>Column 2</h3>
-        <p>Lorem ipsum dolor..</p>
+      <div class="col-sm-4 p-5">
+        <h3>Erfolgreich kommunizieren lernen</h3>
+        <p>Alle Themem finden sie als Basisseminar und als Vertiefungsseminar. Sie bestimmen die Dauer und Tiefe Ihres Themas selsbt!</p>
       </div>
-      <div class="col-sm-4">
-        <h3>Column 3</h3>
-        <p>Lorem ipsum dolor..</p>
+      <div class="col-sm-4 p-5">
+        <h3>Mit Zufriedenheitsgarantie</h3>
+        <p>Onsere Kommunikatiosnspezialistin ist versiert in allen Fachgebieten und scheut Ihre Rückmeldung nicht. Sind sie unzufrieden nach der Schulung? Wir bieten eine 100% Zufriendenheitsgarantei, ansonsten kriegen sie Ihr Geld zurück. Frau Genoud hat schon an TED Talks teilgenommen, das Video findnen sie hier</p>
       </div>
     </div>
   </div>
@@ -45,7 +76,7 @@
 
   <!-- Product
   
-  
+  Online Kommunikation, Teams erfolreich führen im Zeiten von Dititalisierung
   Rethoric and argumenting
 mediation seminar
 presenation skills
@@ -54,5 +85,7 @@ oberserving and anticipating people
 manipulation and how to use it
 -->
 
+
+<!-- Testimonials -->
 </body>
 </html>
