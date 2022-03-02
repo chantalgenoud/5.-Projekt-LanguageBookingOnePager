@@ -73,10 +73,15 @@
       <img src="KOMUNO.png" alt="komuno logo" class="container full-sreen d-flex justifiy-content left"> <!--Logo Komuno-->
     </div>
 
-    <div class="col-sm-8 pr-5 pt-4 pl-5">
+    <!-- Hier komtm das Formular-->
+    <div class="col-sm-8 pr-5 pt-4 pl-5"> <!--fehlt da noch der div row-->
+
+      <!-- get für normale Daten (wird in der ULR angezeigt und begrenzt auf 3000 Zeichen), post nur mit server (back end) für sensitive Daten-->
+
         <h2>Buchen Sie jetzt Ihren Kurs</h2>
 
-        <form action="result.html" id="myForm" name="myForm" method="post" onsubmit="return validateForm()">
+        <form action="result.html" onsubmit="return onSubmit();" id="myForm" name="myForm" method="get"> <!--Wenn onsubmit, muss type= submit sein unten-->
+
           <label for="MyForm">Ihre Angaben</label>
           <br>
           <br>

@@ -1,4 +1,20 @@
-/*
+function onSubmit() {
+    
+    /*select eleemnt with ID "vorname"
+    get value from selected element
+    assign value to new variable calles firstname*/
+
+    let firstName = document.getElementById("vorname").value; /* also weist den wert VORNAME der Variable firstName zu*/
+
+    /*falls keinen wert negierung = !*/ /*mit Javascript besser, da mehr möglichkeiten und es auf allen Browsern funktioniert*/
+    if (!firstName) {
+        alert("bitte geben Sie ihren Namen an");
+        return false;
+    } 
+
+    sessionStorage.setItem("firstName", document.getElementById("firstName").value) // key name erstes speichert als das ab (set), das zweite ist der key value
+
+
 
  function validateForm() {
         let vorname = document.getElementById("vorname").value; 
