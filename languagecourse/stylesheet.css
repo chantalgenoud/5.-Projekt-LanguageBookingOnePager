@@ -11,3 +11,8 @@ h1 {
     margin: auto;
 }
 
+input[type=submit] {
+    background: rgb(255, 72, 0);
+    padding: 0.5em;
+    border: 2em, solid:
+}
