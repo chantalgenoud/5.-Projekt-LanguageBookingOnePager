@@ -85,8 +85,8 @@ function onSubmit() {
                 sessionStorage.setItem("number", number); //wert speichern im Memory des Browser
             
     
-        //agb funktioniert noch nicht, evt weil checkbox? da hackt was fest
-            let agb = document.getElementById("agb").value; 
+        //agb funktioniert noch nicht, evt weil checkbox? da hackt was fest da es eine checkbox ist muss man statt value checked nehmen :)
+            let agb = document.getElementById("agb").checked; 
 
             if (!agb) {
                 alert("Bitte bestätigen sie unsere AGB's");
@@ -95,15 +95,20 @@ function onSubmit() {
                 sessionStorage.setItem("agb", agb);  
       
 
-        //kurs
-            let kurs = document.getElementById("kurs").value; 
+         //kurs1
+                let kurs1 = document.getElementById("kurs1").checked; 
+    
+                sessionStorage.setItem("kurs1", kurs1); //wert speichern im Memory des Browsers  */
 
-            if (!kurs) {
-                alert("Bitte wählem Sie mindestens einen Kurs");
-                return false;
-            } 
+          //kurs2
+          let kurs2 = document.getElementById("kurs2").checked; 
+    
+          sessionStorage.setItem("kurs2", kurs2); //wert speichern im Memory des Browsers  */
 
-            sessionStorage.setItem("kurs", kurs); //wert speichern im Memory des Browsers
+        //kurs3
+        let kurs3 = document.getElementById("kurs3").checked; 
+
+        sessionStorage.setItem("kurs3", kurs3); //wert speichern im Memory des Browsers  */
  
 } //function onSubmit closing 
 

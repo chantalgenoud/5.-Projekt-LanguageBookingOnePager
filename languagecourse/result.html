@@ -17,6 +17,11 @@
         crossorigin="anonymous"></script>
 
     <link href="stylesheet.css" rel=stylesheet>
+
+     <!--Hier kommt ROBOTO ein Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -51,11 +56,13 @@
 
                 const number = sessionStorage.getItem("number"); 
 
-
                 const agb = sessionStorage.getItem("agb");
 
-                const kurs = sessionStorage.getItem("kurs"); 
+                const kurs1 = sessionStorage.getItem("kurs1"); 
 
+                const kurs2 = sessionStorage.getItem("kurs2"); 
+
+                const kurs3 = sessionStorage.getItem("kurs3"); 
 
                     document.getElementById("fritz").innerHTML =
                         `Deine Angaben sind <br> 
@@ -68,7 +75,10 @@
                         E-Mail: ${email}<br>
                         Telefonnumer ${number}<br>
                         AGB: ${agb}<br>
-                        Kurs/e: ${kurs}<br> `;
+                        Kurs Rethorik: ${kurs1}<br>
+                        Kurs Manipulation: ${kurs2}<br>
+                        Kurs Körpersprache und Telepathie: ${kurs3}`;
+    
 
             </script>
 
