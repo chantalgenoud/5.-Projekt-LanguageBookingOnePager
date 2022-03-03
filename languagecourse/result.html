@@ -31,13 +31,23 @@
             <p>Besten Dank. Sie bekommen in kürze eine E-Mail von uns. Bei Fragen können Sie sich jederzeit
                 unter +41792485805 bei Frau Chanal Genoud, unserer Seminarleiterin melden.</p>
 
-                <p="result"></p>
-            <script>
-                console.log(sessionStorage);
-                const firstName = sessionStorage.getItem("firstName");
-                
-                // irgendwo hat es da unten einen fehler result oder firstName
-                document.getElementById("firstName").innerHTML =`<p class="myClass"> From Data:</p> <p>Dein Vorname ist: ${"firstName"}</p>`;
+            <p id="fritz">zh8d8hu</p>
+            <script>          
+                const firstName = sessionStorage.getItem("firstName"); //da wird der Wert geholt
+
+                const lastName = sessionStorage.getItem("lastName"); 
+
+                document.getElementById("fritz").innerHTML = `Deine Angaben sind: 
+                    ${firstName}<br>
+                    ${lastName}<br>`; /*
+                    ${birthDate}<br>
+                    ${address}<br>
+                    ${plz}<br>
+                    ${place}<br>
+                    ${email}<br>
+                    ${number}<br
+                    ${agb}<br>
+                    ${kurs}<br> */
             </script>
         </div>
     </div>

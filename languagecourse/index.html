@@ -80,8 +80,8 @@
 
         <h2>Buchen Sie jetzt Ihren Kurs</h2>
 
-        <form action="result.html" onSubmit="return onSubmit();" id="myForm" name="myForm" method="get"> <!--Wenn onsubmit, muss type= submit sein unten-->
-
+        <form action="result.html" onsubmit="return onSubmit();" id="myForm" name="myForm"> <!--Wenn onsubmit, muss type= submit sein unten-->
+        alert("Hello world");     
           <label for="MyForm">Ihre Angaben</label>
           <br>
           <br>
@@ -99,32 +99,32 @@
 
             <br>
             <br>  
-            <label for="Vorname">Vorname </label><input type="text" id="firstName" name="firstName" max="50" required>
+            <label for="fistName">Vorname</label><input type="text" id="firstName" name="firstName" max="50">
             <br>
             <br>
-            <label for="Name">Name </label><input type="text" id="name" name="name" maxlength="50" required>
+            <label for="lastName">Name</label><input type="text" id="lastName" name="lastName" maxlength="50">
             <br>
             <br>
-            <label for="geburtsdatum">Geburtsdatum </label> <input type="date" id="geburtsdatum" required>
+            <label for="birthDate">Geburtsdatum</label> <input type="date" id="birthDate">
             <br>
             <br>
-            <label for="strasse">Strasse </label><input type="text" id="strasse" name="strasse" required>
+            <label for="address">Strasse </label><input type="text" id="address" name="address">
             <br>
             <br>
-            <label for="Plz">Postleitzahl </label><input type="string" id="Plz" minlength="4" maxlength="4" required>
+            <label for="plz">Postleitzahl</label><input type="string" id="plz" minlength="4" maxlength="4">
             <br>
             <br>
-            <label for="ort">Ort </label> <input type="text" id="ort" name="ort" required>
+            <label for="place">Ort</label> <input type="text" id="place" name="place">
             <br>
             <br>
-            <label for="email">E-Mail <input type="email" id="email" name="email" required>
+            <label for="email">E-Mail<input type="email" id="email" name="email">
             <br>
             <br>  
-            <label for="telefon">Telefonnnumer <input type=string" id="telefon" name="telefon" minlegth="12" maxlength="12" required> <!--dazu noch +41 als standard-->
+            <label for="number">Telefonnnumer<input type=string" id="number" name="number" minlegth="12" maxlength="12"> <!--dazu noch +41 als standard-->
             </label> (+4179xxxxxxx)
             <br>
             <br>
-            <label for="AGB">Ich habe die AGB's gelesen und bin damit einverstanden<input type="checkbox" id="AGB" required>
+            <label for="agb">Ich habe die AGB's gelesen und bin damit einverstanden<input type="checkbox" id="abb">
             </label>
 
             <br>

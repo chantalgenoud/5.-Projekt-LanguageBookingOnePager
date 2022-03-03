@@ -1,28 +1,134 @@
+//First name
 function onSubmit() {
-    
     /*select eleemnt with ID "vorname"
     get value from selected element
     assign value to new variable calles firstname*/
 
     let firstName = document.getElementById("firstName").value; /* also weist den wert VORNAME der Variable firstName zu*/
-
     /*falls keinen wert negierung = !*/ /*mit Javascript besser, da mehr möglichkeiten und es auf allen Browsern funktioniert*/
     if (!firstName) {
-        alert("bitte geben Sie ihren Namen an");
+        alert("Bitte geben Sie ihren Vornamen an");
+        return false;
+    } 
+    sessionStorage.setItem("firstName", firstName); // key name erstes speichert als das ab (set), das zweite ist der key value
+
+//lastName
+            let lastName = document.getElementById("lastName").value; 
+
+            if (!lastName) {
+                alert("Bitte geben Sie ihren Familiennamen an");
+                return false;
+        }
+            sessionStorage.setItem("lastName", lastName); 
+ 
+// da bin ich dran bitte function on submit nur einmal und alles in die selb Funktion
+
+//birthDay +
+function onSubmit() {
+    let birthDay = document.getElementById("birthDay").value; 
+
+        if (!birthDay) {
+        alert("Bitte geben Sie ihr Geburtsdatum an");
+        return false;
+        } 
+    sessionStorage.setItem("birthDay", birthDay); 
+}
+    
+
+//address +
+
+function onSubmit() {
+    let address = document.getElementById("address").value; 
+
+        if (!address) {
+        alert("Bitte geben Sie ihre Adresse an");
+        return false;
+        }
+
+    sessionStorage.setItem("address", address); 
+    } 
+
+
+
+//plz
+
+function onSubmit() {
+    let plz = document.getElementById("plz").value;     
+    
+    if (!plz) {
+        alert("Bitte geben Sie ihre Postleitzahl an");
+        return false;
+    }
+    sessionStorage.setItem("plz", plz); 
+} 
+
+
+
+// place +
+function onSubmit() {
+    let place = document.getElementById("place").value; 
+
+        if (!place) {
+        alert("Bitte geben Sie ihre Ortschaft an");
+        return false;
+        }
+    sessionStorage.setItem("place", place); //wert speichern im Memory des Browsers
+}
+    
+
+
+
+// email
+function onSubmit() {
+    let email = document.getElementById("email").value; 
+
+    if (!email) {
+        alert("Bitte geben Sie ihre E-Mail Adresse an");
+        return false;
+    } 
+    sessionStorage.setItem("email", email); //wert speichern im Memory des Browsers
+}
+    
+
+
+// number
+function onSubmit() {
+    let number = document.getElementById("number").value; 
+
+        if (!number) {
+        alert("Bitte geben Sie ihre Telefonnummer an");
+        return false;
+        } 
+    
+        sessionStorage.setItem("number", number); //wert speichern im Memory des Browsers
+}
+    
+ 
+
+//agb +
+function onSubmit() {
+    let agb = document.getElementById("agb").value; 
+
+    if (!agb) {
+        alert("Bitte bestätigen sie unsere AGB's");
+        return false;
+    } 
+        sessionStorage.setItem("number", number); 
+    }  
+
+
+   
+
+//kurs
+function onSubmit() {
+    let kurs = document.getElementById("kurs").value; 
+
+    if (!kurs) {
+        alert("Bitte wählem Sie mindestens einen Kurs");
         return false;
     } 
 
-    sessionStorage.setItem("firstName", document.getElementById("firstName").value) // key name erstes speichert als das ab (set), das zweite ist der key value
+    sessionStorage.setItem("kurs", kurs); //wert speichern im Memory des Browsers
 }
+} //function onSubmit closing 
 
-
- function validateForm() {
-        let vorname = document.getElementById("firstName").value; 
-
-        sessionStorage.setItem("firstName", firstName); //wert speichern im Memory des Browsers
-        alert("firstName= "+firstName);
-    }
-
-
-
-        //document.getElementById("firstName").innerHTML; // das nimmt den wert aus dem cache und setzte sie als id = vorname Die Eigenschaft Element.innerHTML liest und speichert den Inhalt eines HTML-Elements. Wenn Sie beim dynamischen Ändern des gespeicherten Inhalts HTML-Tags notieren, werden diese bei der Aktualisierung des Elementinhalts interpretiert. */
