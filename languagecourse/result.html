@@ -22,34 +22,61 @@
 <body>
     <div class="row">
         <div class="col-sm-4 p-5">
-            <img src="KOMUNO.png" alt="Dank KOMUNO effektiv kommunizieren lernen" class="container full-screen d-flex justify-content center"> 
+            <img src="KOMUNO.png" alt="Dank KOMUNO effektiv kommunizieren lernen"
+                class="container full-screen d-flex justify-content center">
         </div>
 
         <div class="col-sm-8 p-5">
-            <p><strong>Wir haben ihre Bestellung erhalten.</strong></p>
+            <p><strong>Wir haben ihre Bestellung erhalten. Besten Dank. </strong></p>
             <br>
-            <p>Besten Dank. Sie bekommen in kürze eine E-Mail von uns. Bei Fragen können Sie sich jederzeit
-                unter +41792485805 bei Frau Chanal Genoud, unserer Seminarleiterin melden.</p>
+           
 
-            <p id="fritz">zh8d8hu</p>
-            <script>          
+            <!--Wir nenen die id fritz um zu zeigen, dass es nicht um den Text geht sondern, nur getElementById das Selbe ist-->
+            <p id="fritz">Fehlermeldung</p>
+
+            <script>
                 const firstName = sessionStorage.getItem("firstName"); //da wird der Wert geholt
 
-                const lastName = sessionStorage.getItem("lastName"); 
+                const lastName = sessionStorage.getItem("lastName");
 
-                document.getElementById("fritz").innerHTML = `Deine Angaben sind: 
-                    ${firstName}<br>
-                    ${lastName}<br>`; /*
-                    ${birthDate}<br>
-                    ${address}<br>
-                    ${plz}<br>
-                    ${place}<br>
-                    ${email}<br>
-                    ${number}<br
-                    ${agb}<br>
-                    ${kurs}<br> */
+                const birthDay = sessionStorage.getItem("birthDay");
+
+                const address = sessionStorage.getItem("address");
+
+                const plz = sessionStorage.getItem("plz");
+
+                const place = sessionStorage.getItem("place");
+
+                const email = sessionStorage.getItem("email");
+
+                const number = sessionStorage.getItem("number"); 
+
+
+                const agb = sessionStorage.getItem("agb");
+
+                const kurs = sessionStorage.getItem("kurs"); 
+
+
+                    document.getElementById("fritz").innerHTML =
+                        `Deine Angaben sind <br> 
+                        Vorname: ${firstName}<br> 
+                        Name: ${lastName}<br>
+                        Geburtsdatum: ${birthDay}<br>                    
+                        Adresse: ${address}<br> 
+                        Postleitzahl: ${plz}<br>
+                        Ortschaft: ${place}<br>
+                        E-Mail: ${email}<br>
+                        Telefonnumer ${number}<br>
+                        AGB: ${agb}<br>
+                        Kurs/e: ${kurs}<br> `;
+
             </script>
+
+    <p>Sie bekommen in kürze eine E-Mail von uns. Bei Fragen können Sie sich jederzeit
+        unter +41792485805 bei Frau Chanal Genoud, unserer Seminarleiterin melden.</p>
+
         </div>
     </div>
 </body>
-</html>
+</html>                 
+

@@ -23,112 +23,87 @@ function onSubmit() {
  
 // da bin ich dran bitte function on submit nur einmal und alles in die selb Funktion
 
-//birthDay +
-function onSubmit() {
-    let birthDay = document.getElementById("birthDay").value; 
+        //birthDay +
+            let birthDay = document.getElementById("birthDay").value; 
 
-        if (!birthDay) {
-        alert("Bitte geben Sie ihr Geburtsdatum an");
-        return false;
-        } 
-    sessionStorage.setItem("birthDay", birthDay); 
-}
+                if (!birthDay) {
+                alert("Bitte geben Sie ihr Geburtsdatum an");
+                return false;
+                } 
+            sessionStorage.setItem("birthDay", birthDay);       
+
+        //address +
+            let address = document.getElementById("address").value; 
+
+                if (!address) {
+                alert("Bitte geben Sie ihre Adresse an");
+                return false;
+                }
+
+            sessionStorage.setItem("address", address); 
+
+
+        //plz
+            let plz = document.getElementById("plz").value;     
+            
+            if (!plz) {
+                alert("Bitte geben Sie ihre Postleitzahl an");
+                return false;
+            }
+            sessionStorage.setItem("plz", plz); 
+        
+
+        // place +
+            let place = document.getElementById("place").value; 
+
+                if (!place) {
+                alert("Bitte geben Sie ihre Ortschaft an");
+                return false;
+                }
+            sessionStorage.setItem("place", place); //wert speichern im Memory des Browsers
+        
+            
+        // email
+            let email = document.getElementById("email").value; 
+
+            if (!email) {
+                alert("Bitte geben Sie ihre E-Mail Adresse an");
+                return false;
+            } 
+            sessionStorage.setItem("email", email); //wert speichern im Memory des Browsers
+            
+
+
+        // number
+            let number = document.getElementById("number").value; 
+
+                if (!number) {
+                alert("Bitte geben Sie ihre Telefonnummer an");
+                return false;
+                } 
+            
+                sessionStorage.setItem("number", number); //wert speichern im Memory des Browser
+            
     
+        //agb funktioniert noch nicht, evt weil checkbox? da hackt was fest
+            let agb = document.getElementById("agb").value; 
 
-//address +
+            if (!agb) {
+                alert("Bitte bestätigen sie unsere AGB's");
+                return false;
+            } 
+                sessionStorage.setItem("agb", agb);  
+      
 
-function onSubmit() {
-    let address = document.getElementById("address").value; 
+        //kurs
+            let kurs = document.getElementById("kurs").value; 
 
-        if (!address) {
-        alert("Bitte geben Sie ihre Adresse an");
-        return false;
-        }
+            if (!kurs) {
+                alert("Bitte wählem Sie mindestens einen Kurs");
+                return false;
+            } 
 
-    sessionStorage.setItem("address", address); 
-    } 
-
-
-
-//plz
-
-function onSubmit() {
-    let plz = document.getElementById("plz").value;     
-    
-    if (!plz) {
-        alert("Bitte geben Sie ihre Postleitzahl an");
-        return false;
-    }
-    sessionStorage.setItem("plz", plz); 
-} 
-
-
-
-// place +
-function onSubmit() {
-    let place = document.getElementById("place").value; 
-
-        if (!place) {
-        alert("Bitte geben Sie ihre Ortschaft an");
-        return false;
-        }
-    sessionStorage.setItem("place", place); //wert speichern im Memory des Browsers
-}
-    
-
-
-
-// email
-function onSubmit() {
-    let email = document.getElementById("email").value; 
-
-    if (!email) {
-        alert("Bitte geben Sie ihre E-Mail Adresse an");
-        return false;
-    } 
-    sessionStorage.setItem("email", email); //wert speichern im Memory des Browsers
-}
-    
-
-
-// number
-function onSubmit() {
-    let number = document.getElementById("number").value; 
-
-        if (!number) {
-        alert("Bitte geben Sie ihre Telefonnummer an");
-        return false;
-        } 
-    
-        sessionStorage.setItem("number", number); //wert speichern im Memory des Browsers
-}
-    
+            sessionStorage.setItem("kurs", kurs); //wert speichern im Memory des Browsers
  
-
-//agb +
-function onSubmit() {
-    let agb = document.getElementById("agb").value; 
-
-    if (!agb) {
-        alert("Bitte bestätigen sie unsere AGB's");
-        return false;
-    } 
-        sessionStorage.setItem("number", number); 
-    }  
-
-
-   
-
-//kurs
-function onSubmit() {
-    let kurs = document.getElementById("kurs").value; 
-
-    if (!kurs) {
-        alert("Bitte wählem Sie mindestens einen Kurs");
-        return false;
-    } 
-
-    sessionStorage.setItem("kurs", kurs); //wert speichern im Memory des Browsers
-}
 } //function onSubmit closing 
 

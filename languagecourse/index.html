@@ -74,14 +74,14 @@
     </div>
 
     <!-- Hier komtm das Formular-->
-    <div class="col-sm-8 pr-5 pt-4 pl-5"> <!--fehlt da noch der div row-->
+    <div class="col-sm-8 pr-5 pt-4 pl-5"> <!--fehlt da noch der div row?-->
 
       <!-- get für normale Daten (wird in der ULR angezeigt und begrenzt auf 3000 Zeichen), post nur mit server (back end) für sensitive Daten-->
 
         <h2>Buchen Sie jetzt Ihren Kurs</h2>
 
         <form action="result.html" onsubmit="return onSubmit();" id="myForm" name="myForm"> <!--Wenn onsubmit, muss type= submit sein unten-->
-        alert("Hello world");     
+
           <label for="MyForm">Ihre Angaben</label>
           <br>
           <br>
@@ -105,7 +105,7 @@
             <label for="lastName">Name</label><input type="text" id="lastName" name="lastName" maxlength="50">
             <br>
             <br>
-            <label for="birthDate">Geburtsdatum</label> <input type="date" id="birthDate">
+            <label for="birthDay">Geburtsdatum</label> <input type="date" id="birthDay">
             <br>
             <br>
             <label for="address">Strasse </label><input type="text" id="address" name="address">
@@ -124,7 +124,10 @@
             </label> (+4179xxxxxxx)
             <br>
             <br>
-            <label for="agb">Ich habe die AGB's gelesen und bin damit einverstanden<input type="checkbox" id="abb">
+            
+            <!--Da steckt es fest
+            -->
+            <label for="agb">Ich habe die AGB's gelesen und bin damit einverstanden<input type="checkbox" id="agb" name="agb"> <!--das geht noch nicht-->
             </label>
 
             <br>
@@ -149,7 +152,6 @@
 
             <input type="submit" value="Abschicken">
             <br>
-            <!--alert-->
         </form>
     </div> 
   </div>      
